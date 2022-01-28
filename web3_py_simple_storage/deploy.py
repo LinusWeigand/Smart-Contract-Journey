@@ -13,11 +13,9 @@ compiled_sol = compile_standard(
         "sources": {"SimpleStorage.sol": {"content": simple_storage_file}},
         "settings": {
             "outputSelection": {
-                "*": {
-                    "*": ["abi", "metadata", "evm.bytecode", "evm.sourceMap"]
-                }
+                "*": {"*": ["abi", "metadata", "evm.bytecode", "evm.sourceMap"]}
             }
-        }
+        },
     },
     solc_version="0.6.0",
 )
